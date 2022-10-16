@@ -11,4 +11,4 @@ With this tool you can a specify a document limit to a collection and the server
   - This project is created using **NodeJs**
   - This project users the offical **MongoDb driver** for **NodeJs** to communicate with the **MongoDb** database
  
-### Overview of the file structure
+### Overview
