@@ -74,7 +74,7 @@ With this tool you can a specify a document limit to a collection and the server
     
   - Then build the docker Image
     ```
-    docker build ./ -t mongoCollectionLimiter
+    docker build ./ -t mongocollectionlimiter
     ```
   - Then you should create a `docker-compose.yml`
      - first create a docker-compose.yml file
@@ -111,7 +111,7 @@ With this tool you can a specify a document limit to a collection and the server
          version: '3.8'
          services:
             mongoLimitChecker:
-              image: mongolimit
+              image: mongocollectionlimiter
               volumes:
                   - /localpath:/log
               command: [ "node", "mongoLimitChecker.js" ]
