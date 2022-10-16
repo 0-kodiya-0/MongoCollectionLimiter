@@ -95,9 +95,10 @@ With this tool you can a specify a document limit to a collection and the server
                    ex :- CONF_ID: "MAX_COL_LIMIT"
         ```
         ```
-        COLL_IDENTIFY_VALUE :-
+        COLL_IDENTIFY_VALUE :- you need to add a col identify value here
+                            ex :- COLL_IDENTIFY_VALUE: *
         ```
         ```
         DB_NAME :- The database name that you need to watch
-                    ex :- DB_NAME: "orders"
+                    ex :- DB_NAME: "customers"
         ```
