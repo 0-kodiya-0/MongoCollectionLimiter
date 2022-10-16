@@ -51,6 +51,13 @@ With this tool you can a specify a document limit to a collection and the server
              
              And I have to add the id "MAX_COL_LIMIT" to the CONF_ID env varible in the NodeJs process
    ```
+   > **Warning**  ***The above document should be in every collection that want to limit the document num***
+
+   > So the NodeJs process will look in the db that you specified in the **DB_NAME** and search for collections in that database
+   > with the **COLL_IDENTIFY_VALUE** and check for
+   > the **CONF document** with id that you
+   > specified in **CONF_ID** and check **every time** if the num of documents in that collection = the num you specified in the **CONF
+   >  document**
    
 ### To run the project
   - Open the terminal
