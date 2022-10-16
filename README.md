@@ -10,4 +10,6 @@ With this tool you can a specify a document limit to a collection and the server
   - This project users the offical **MongoDb driver** for **NodeJs** to communicate with the **MongoDb** database
  
 ### To run the project
-  - The `/lib` folder has all the 
+  - Clone the project
+  
+      > Text that is a quote
