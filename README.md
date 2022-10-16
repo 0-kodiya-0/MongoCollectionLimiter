@@ -44,7 +44,7 @@ With this tool you can a specify a document limit to a collection and the server
    ```
    ex :-     {
                "_id": "MAX_COL_LIMIT",
-               "collectionLimit": 15
+               "documentLimit": 15
              }
              
              CONF_ID = "MAX_COL_LIMIT"
