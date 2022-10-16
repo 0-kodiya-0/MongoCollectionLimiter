@@ -10,6 +10,18 @@ With this tool you can a specify a document limit to a collection and the server
   - This project users the offical **MongoDb driver** for **NodeJs** to communicate with the **MongoDb** database
  
 ### To run the project
-  - Clone the project
+  - Open the terminal
   
-      > Text that is a quote
+    > **Warning**  ***I have tested this code in Linux enviroment with docker***
+    
+  - Clone the project
+    ```
+    git clone https://github.com/0-kodiya-0/MongoCollectionLimiter.git && cd MongoCollectionLimiter
+     ```
+  - Run ``` npm install ``` 
+    > If  ***error*** just run ``` npm install mongodb```
+    
+  - Then build the docker Image
+    ```
+    docker build ./ -t mongoCollectionLimiter
+    ```
