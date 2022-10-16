@@ -14,12 +14,17 @@ With this tool you can a specify a document limit to a collection and the server
   
     > **Warning**  ***I have tested this code in Linux enviroment with docker***
     
-  - Clone the project
+  - ###Clone the project
     ```
     git clone https://github.com/0-kodiya-0/MongoCollectionLimiter.git && cd MongoCollectionLimiter
      ```
   - Run ``` npm install ``` 
     > If  ***error*** just run ``` npm install mongodb```
+    
+  - Then add a `.dockerignore` file
+    ```
+    cat
+    ```
     
   - Then build the docker Image
     ```
