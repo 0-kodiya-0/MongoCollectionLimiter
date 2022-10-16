@@ -129,6 +129,6 @@ With this tool you can a specify a document limit to a collection and the server
          ```
 
 
- ### There is a vedioClip that is taken while the running the NodeJs process. 
+ ### There is a vedioClip that is taken while running the NodeJs process. 
  
       Hope it helps you to understand my NodeJs project  
