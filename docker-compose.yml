@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  mongoLimitChecker:
+    image: mongolimit
+    volumes:
+      - /media/kodiya/hard1/mongo_Limti_Check_Log:/log
+      - /media/kodiya/hard1/openssl/mongocrt/mongo1:/media/kodiya/hard1/openssl/mongocrt/mongo1
+      - /media/kodiya/hard1/openssl/mongocrt/clientcert:/media/kodiya/hard1/openssl/mongocrt/clientcert
+    command: [ "node", "mongoLimitChecker.js" ]
+    environment:
+      MONGO_SERVER_DB_URI: "mongodb://root:mongodb%40%23123456@192.168.8.129:27018,192.168.8.100:27019,192.168.8.100:27020/?replicaSet=rs0&authMechanism=DEFAULT&tls=true&tlsCAFile=%2Fmedia%2Fkodiya%2Fhard1%2Fopenssl%2Fmongocrt%2Fmongo1%2Froot_CA.crt&tlsCertificateKeyFile=%2Fmedia%2Fkodiya%2Fhard1%2Fopenssl%2Fmongocrt%2Fclientcert%2Fserver.pem&tlsAllowInvalidHostnames=true"
+      LOG_FILE_PATH: "/log/"
+      CONF_ID: "MAX_COL_LIMIT"
+      COLL_IDENTIFY_VALUE: "*"
+      DB_NAME: "servers"
