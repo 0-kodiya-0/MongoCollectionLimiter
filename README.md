@@ -76,7 +76,11 @@ With this tool you can a specify a document limit to a collection and the server
     ```
     docker build ./ -t mongoCollectionLimiter
     ```
-  - Then run the `docker-compose.yml` with docker compose
+  - Then you should create a `docker-compose.yml`
+     - first create a docker-compose.yml file
+        ```
+        touch docker-compose.yml
+        ```
      
      - In **docker compose file** there are **enviroment varibles** that you need to specify. 
      
@@ -102,3 +106,24 @@ With this tool you can a specify a document limit to a collection and the server
         DB_NAME :- The database name that you need to watch
                     ex :- DB_NAME: "customers" (read How does it run)
         ```
+      - Then you docker-compose.yml file should look like this
+         ```
+         version: '3.8'
+         services:
+            mongoLimitChecker:
+              image: mongolimit
+              volumes:
+                  - /localpath:/log
+              command: [ "node", "mongoLimitChecker.js" ]
+              environment:
+                   MONGO_SERVER_DB_URI: mongodb uri 
+                   LOG_FILE_PATH: "/log"
+                   CONF_ID: "MAX_COL_LIMIT"
+                   COLL_IDENTIFY_VALUE: "*"
+                   DB_NAME: "customers"
+
+         ```
+      - Then simple run 
+         ```
+         docker compose up -d
+         ```
