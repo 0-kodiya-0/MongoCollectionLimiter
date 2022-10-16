@@ -117,10 +117,10 @@ With this tool you can a specify a document limit to a collection and the server
               command: [ "node", "mongoLimitChecker.js" ]
               environment:
                    MONGO_SERVER_DB_URI: mongodb uri 
-                   LOG_FILE_PATH: "/log"
-                   CONF_ID: "MAX_COL_LIMIT"
-                   COLL_IDENTIFY_VALUE: "*"
-                   DB_NAME: "customers"
+                   LOG_FILE_PATH: "your log path"
+                   CONF_ID: "your conf id"
+                   COLL_IDENTIFY_VALUE: "your col identify value"
+                   DB_NAME: "db name"
 
          ```
       - Then simple run 
